@@ -2,13 +2,17 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: whitesmoke;
-  touch-action: auto;
 }
 
-.globe {
-  display: grid;
-  place-items: center;
-  height: 80vh;
-  cursor: grabbing;
+.Header {
+  background-color: brown;
+  height: 10vh;
+}
+
+.canvas {
+  background: #404040;
+}
+
+.Footer {
+  background-color: brown;
 }
