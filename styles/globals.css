@@ -2,15 +2,14 @@ html,
 body {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
 }
 
 .Header {
   background-color: brown;
   height: 10vh;
-}
-
-.canvas {
-  background: #404040;
 }
 
 .Footer {
