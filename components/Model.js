@@ -1,8 +1,6 @@
-import { useRef, Suspense } from 'react';
-import { Canvas, useFrame, extend, useThree } from '@react-three/fiber';
+import { useRef } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, OrbitControls } from '@react-three/drei';
-
-// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 function Model(props) {
   const torusRef = useRef();
@@ -23,26 +21,26 @@ function LightBulb(props) {
 export default function Model3d() {
   return (
     <>
-      <mesh
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-        }}
-      >
+      <mesh className="mesh">
         <Canvas
           style={{
-            width: '35vw',
-            height: '35vw',
+            zIndex: '1',
+            border: 'solid',
+            borderRadius: '50%',
+            aspectRatio: '1300',
+            width: '40vw',
+            height: '40vw',
           }}
+          className=""
           camera={{
             position: [0, 3, 6],
             zoom: 1.75,
           }}
         >
-          <LightBulb position={[3, 3, 3]} />
-          <LightBulb position={[-3, 3, -6]} />
-          <LightBulb position={[-3, 3, 2]} />
-          <LightBulb position={[3, 3, -6]} />
+          <LightBulb position={[3, 2, 3]} />
+          <LightBulb position={[-3, 2, -6]} />
+          <LightBulb position={[-3, 2, 2]} />
+          <LightBulb position={[3, 2, -6]} />
           <Model position={[0, -1.6, 0]} />
           <OrbitControls
             minAzimuthAngle={Math.PI}

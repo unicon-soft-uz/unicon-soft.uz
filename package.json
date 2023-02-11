@@ -14,10 +14,17 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@heroicons/react": "v1",
     "@react-three/drei": "^9.56.12",
-    "@react-three/fiber": "^8.10.2",
+    "@react-three/fiber": "^8.10.1",
+    "autoprefixer": "^10.4.13",
+    "depcheck": "^1.4.3",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "next-themes": "^0.2.1",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6",
     "three": "^0.149.0"
   }
 }
