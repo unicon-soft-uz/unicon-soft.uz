@@ -1,6 +1,6 @@
-import Header from './Header';
 import Footer from './Footer';
 import Head from 'next/head';
+import Header from './Header';
 
 export function Layout({ children }) {
   return (
@@ -26,9 +26,7 @@ export function Layout({ children }) {
 
       <div className=" mx-auto flex flex-col">
         <Header />
-        <main className="flex-grow container mx-auto px-4 sm:px-6">
-          {children}
-        </main>
+        <main className="container mx-auto px-4 sm:px-6">{children}</main>
         <Footer />
       </div>
     </>

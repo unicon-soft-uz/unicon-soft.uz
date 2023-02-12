@@ -14,16 +14,25 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@heroicons/react": "v1",
+    "@formatjs/intl-localematcher": "^0.2.32",
+    "@headlessui/react": "^1.7.10",
+    "@heroicons/react": "^2.0.15",
+    "@react-icons/all-files": "^4.1.0",
     "@react-three/drei": "^9.56.12",
     "@react-three/fiber": "^8.10.1",
     "autoprefixer": "^10.4.13",
     "depcheck": "^1.4.3",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "i18next": "^22.4.9",
+    "negotiator": "^0.6.3",
+    "next-i18next": "^13.1.5",
     "next-themes": "^0.2.1",
     "node-sass": "^8.0.0",
     "postcss": "^8.4.21",
+    "react-i18next": "^12.1.5",
+    "react-icons": "^4.7.1",
+    "server-only": "^0.0.1",
     "tailwindcss": "^3.2.6",
     "three": "^0.149.0"
   }

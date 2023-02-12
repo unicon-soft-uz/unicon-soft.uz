@@ -21,12 +21,12 @@ function LightBulb(props) {
 export default function Model3d() {
   return (
     <>
-      <mesh className="mesh">
+      <div className="mesh">
         <Canvas
           style={{
             zIndex: '1',
-            border: 'solid',
-            borderRadius: '50%',
+            // border: 'solid',
+            // borderRadius: '50%',
             aspectRatio: '1300',
             width: '40vw',
             height: '40vw',
@@ -50,7 +50,7 @@ export default function Model3d() {
             enableZoom={false}
           />
         </Canvas>
-      </mesh>
+      </div>
     </>
   );
 }

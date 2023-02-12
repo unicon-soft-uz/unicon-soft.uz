@@ -103,7 +103,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.20.7":
+"@babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.20.7":
   version: 7.20.13
   resolution: "@babel/runtime@npm:7.20.13"
   dependencies:
@@ -204,6 +204,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formatjs/intl-localematcher@npm:^0.2.32":
+  version: 0.2.32
+  resolution: "@formatjs/intl-localematcher@npm:0.2.32"
+  dependencies:
+    tslib: ^2.4.0
+  checksum: 477e18aabaf2e6e90fc12952a3cb6c0ebb40ad99414d6b9d2501c6348fbad58cacb433ec6630955cfd1491ea7630f32a9dc280bb27d0fb8a784251404a54140a
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1, @gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -211,12 +220,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@heroicons/react@npm:v1":
-  version: 1.0.6
-  resolution: "@heroicons/react@npm:1.0.6"
+"@headlessui/react@npm:^1.7.10":
+  version: 1.7.10
+  resolution: "@headlessui/react@npm:1.7.10"
+  dependencies:
+    client-only: ^0.0.1
+  peerDependencies:
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+  checksum: 39b50fb07bd5482611720d292f1db6ca79a52ccea304aa24a21fdca693d983e212d7493c52ece8921581222206f9cbb8f1a91485efa17cc36a7a9a44d8df1547
+  languageName: node
+  linkType: hard
+
+"@heroicons/react@npm:^2.0.15":
+  version: 2.0.15
+  resolution: "@heroicons/react@npm:2.0.15"
   peerDependencies:
     react: ">= 16"
-  checksum: 372b1eda3ce735ef069777bc96304f70de585ebb71a6d1cedc121bb695f9bca235619112e3ee14e8779e95a03096813cbbe3b755927a54b7580d1ce084fa4096
+  checksum: 11ec68629e73cb8ffe893090594ca5c02f4369dd964f1c95445bd83769d45df4df85cd12b021519c2bd14fdb38e3ce2ac6f2752e7c6dd578c26dc0ec75a5a35a
   languageName: node
   linkType: hard
 
@@ -475,6 +496,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-icons/all-files@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@react-icons/all-files@npm:4.1.0"
+  peerDependencies:
+    react: "*"
+  checksum: c34c644650a144e4f2157c20b3106200ac1f76b3132dcda1a40f061e000a34c78df188266395afae571d5c85bf48365824db7b1bf8b7ae6229fdc148c941ab85
+  languageName: node
+  linkType: hard
+
 "@react-spring/animated@npm:~9.6.1":
   version: 9.6.1
   resolution: "@react-spring/animated@npm:9.6.1"
@@ -641,6 +671,16 @@ __metadata:
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: ad87447820dd3f24825d2d947ebc03072b20a42bfc96cbafec16bff8bbda6c1a81fcb0be56d5b21968560c5359a0af4038a68ba150c3e1694fe4c109a063bed8
+  languageName: node
+  linkType: hard
+
+"@types/hoist-non-react-statics@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "@types/hoist-non-react-statics@npm:3.3.1"
+  dependencies:
+    "@types/react": "*"
+    hoist-non-react-statics: ^3.3.0
+  checksum: 2c0778570d9a01d05afabc781b32163f28409bb98f7245c38d5eaf082416fdb73034003f5825eb5e21313044e8d2d9e1f3fe2831e345d3d1b1d20bcd12270719
   languageName: node
   linkType: hard
 
@@ -1220,15 +1260,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap@npm:^5.2.3":
-  version: 5.2.3
-  resolution: "bootstrap@npm:5.2.3"
-  peerDependencies:
-    "@popperjs/core": ^2.11.6
-  checksum: 0211805dec6a190c0911d142966df30fdb4b4139a04cc6c23dd83c6045ea3cb0a966b360ab2e701e7b3ad96ff01e05fdc0914be97b41bd876b11e457a8bdc6a3
-  languageName: node
-  linkType: hard
-
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -1456,7 +1487,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"client-only@npm:0.0.1":
+"client-only@npm:0.0.1, client-only@npm:^0.0.1":
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
   checksum: 0c16bf660dadb90610553c1d8946a7fdfb81d624adea073b8440b7d795d5b5b08beb3c950c6a2cf16279365a3265158a236876d92bce16423c485c322d7dfaf8
@@ -1537,6 +1568,13 @@ __metadata:
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
   checksum: 8755d76787f94e6cf79ce4666f0c5519906d7f5b02d4b884cf41e11dcd759ed69c57da0670afd9236d229a46e0f9cf519db0cd829c6dca820bb5a5c3def584ed
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3":
+  version: 3.27.2
+  resolution: "core-js@npm:3.27.2"
+  checksum: 718debd426f55a6b97cf9b757c936be258afd6d4f7052f89d0f96c982d7013e9000b0b006df42831a0cf32adad298e34d6a19052dce9ae1c7ab87162c0c665e0
   languageName: node
   linkType: hard
 
@@ -2776,6 +2814,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hoist-non-react-statics@npm:^3.3.0, hoist-non-react-statics@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "hoist-non-react-statics@npm:3.3.2"
+  dependencies:
+    react-is: ^16.7.0
+  checksum: b1538270429b13901ee586aa44f4cc3ecd8831c061d06cb8322e50ea17b3f5ce4d0e2e66394761e6c8e152cd8c34fb3b4b690116c6ce2bd45b18c746516cb9e8
+  languageName: node
+  linkType: hard
+
 "hosted-git-info@npm:^2.1.4":
   version: 2.8.9
   resolution: "hosted-git-info@npm:2.8.9"
@@ -2789,6 +2836,15 @@ __metadata:
   dependencies:
     lru-cache: ^6.0.0
   checksum: c3f87b3c2f7eb8c2748c8f49c0c2517c9a95f35d26f4bf54b2a8cba05d2e668f3753548b6ea366b18ec8dadb4e12066e19fa382a01496b0ffa0497eb23cbe461
+  languageName: node
+  linkType: hard
+
+"html-parse-stringify@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "html-parse-stringify@npm:3.0.1"
+  dependencies:
+    void-elements: 3.1.0
+  checksum: 334fdebd4b5c355dba8e95284cead6f62bf865a2359da2759b039db58c805646350016d2017875718bc3c4b9bf81a0d11be5ee0cf4774a3a5a7b97cde21cfd67
   languageName: node
   linkType: hard
 
@@ -2837,6 +2893,22 @@ __metadata:
   dependencies:
     ms: ^2.0.0
   checksum: 9c7a74a2827f9294c009266c82031030eae811ca87b0da3dceb8d6071b9bde22c9f3daef0469c3c533cc67a97d8a167cd9fc0389350e5f415f61a79b171ded16
+  languageName: node
+  linkType: hard
+
+"i18next-fs-backend@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "i18next-fs-backend@npm:2.1.1"
+  checksum: fe606df2639b3ea49501b5bc947553e4bfbce67290c91ab22a8b9ecee4d11b8ae78179980720998881f117f0321d3ba0f739fb93a0ab95613cd79b85ffb014f5
+  languageName: node
+  linkType: hard
+
+"i18next@npm:^22.4.9":
+  version: 22.4.9
+  resolution: "i18next@npm:22.4.9"
+  dependencies:
+    "@babel/runtime": ^7.20.6
+  checksum: 8cce4aaced4857e006fab2c9d4adb0eb1375829e459076be79d4d3532b1be6342b7003a720e187098f17bb276bea46df8b3fc2cf21f0f3a230bd519243048d1a
   languageName: node
   linkType: hard
 
@@ -3810,6 +3882,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-i18next@npm:^13.1.5":
+  version: 13.1.5
+  resolution: "next-i18next@npm:13.1.5"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    "@types/hoist-non-react-statics": ^3.3.1
+    core-js: ^3
+    hoist-non-react-statics: ^3.3.2
+    i18next-fs-backend: ^2.1.1
+  peerDependencies:
+    i18next: ^22.0.6
+    next: ">= 12.0.0"
+    react: ">= 17.0.2"
+    react-i18next: ^12.1.5
+  checksum: 4f938fea7e9be3e75a1d8fd9bc230697bd0cd002b494b86bd5a8cbe3a5e94d387ee46d2c25401692e3278f69d878123722f57e7d2e264ee11e47e89dc840ede9
+  languageName: node
+  linkType: hard
+
 "next-themes@npm:^0.2.1":
   version: 0.2.1
   resolution: "next-themes@npm:0.2.1"
@@ -4511,7 +4601,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1":
+"react-i18next@npm:^12.1.5":
+  version: 12.1.5
+  resolution: "react-i18next@npm:12.1.5"
+  dependencies:
+    "@babel/runtime": ^7.20.6
+    html-parse-stringify: ^3.0.1
+  peerDependencies:
+    i18next: ">= 19.0.0"
+    react: ">= 16.8.0"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 90f151dfef237eee4e24d5ca6ddac45869b5025b9173b3cf0403afbc794a448d5ba429105c88e6a539cea1e8ec3f6e18df46d8bee78e7918d79305aa9ec585cb
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "react-icons@npm:4.7.1"
+  peerDependencies:
+    react: "*"
+  checksum: ed3cbdc5fc0c4d7d2debf78fdc8c4c80aeacf85a506a9a3c11b1d5922de393ac0a6542012b7fb81761e9280c54d0f26827d50a92b54ec8f0c8e52364d89970b5
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -4914,6 +5031,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"server-only@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "server-only@npm:0.0.1"
+  checksum: c432348956641ea3f460af8dc3765f3a1bdbcf7a1e0205b0756d868e6e6fe8934cdee6bff68401a1dd49ba4a831c75916517a877446d54b334f7de36fa273e53
+  languageName: node
+  linkType: hard
+
 "set-blocking@npm:^2.0.0":
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0"
@@ -5012,20 +5136,28 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "soft@workspace:."
   dependencies:
-    "@heroicons/react": v1
+    "@formatjs/intl-localematcher": ^0.2.32
+    "@headlessui/react": ^1.7.10
+    "@heroicons/react": ^2.0.15
+    "@react-icons/all-files": ^4.1.0
     "@react-three/drei": ^9.56.12
     "@react-three/fiber": ^8.10.1
     autoprefixer: ^10.4.13
-    bootstrap: ^5.2.3
     depcheck: ^1.4.3
     eslint: 8.33.0
     eslint-config-next: 13.1.6
+    i18next: ^22.4.9
+    negotiator: ^0.6.3
     next: 13.1.6
+    next-i18next: ^13.1.5
     next-themes: ^0.2.1
     node-sass: ^8.0.0
     postcss: ^8.4.21
     react: 18.2.0
     react-dom: 18.2.0
+    react-i18next: ^12.1.5
+    react-icons: ^4.7.1
+    server-only: ^0.0.1
     tailwindcss: ^3.2.6
     three: ^0.149.0
   languageName: unknown
@@ -5664,6 +5796,13 @@ __metadata:
     spdx-correct: ^3.0.0
     spdx-expression-parse: ^3.0.0
   checksum: 35703ac889d419cf2aceef63daeadbe4e77227c39ab6287eeb6c1b36a746b364f50ba22e88591f5d017bc54685d8137bc2d328d0a896e4d3fd22093c0f32a9ad
+  languageName: node
+  linkType: hard
+
+"void-elements@npm:3.1.0":
+  version: 3.1.0
+  resolution: "void-elements@npm:3.1.0"
+  checksum: 0390f818107fa8fce55bb0a5c3f661056001c1d5a2a48c28d582d4d847347c2ab5b7f8272314cac58acf62345126b6b09bea623a185935f6b1c3bbce0dfd7f7f
   languageName: node
   linkType: hard
 
