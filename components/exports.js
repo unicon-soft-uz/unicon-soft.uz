@@ -10,7 +10,6 @@ import {
   ShieldCheckIcon,
   Squares2X2Icon,
 } from '@heroicons/react/24/outline';
-
 export const solutions = [
   {
     name: 'ijro.gov.uz',
@@ -42,7 +41,7 @@ export const solutions = [
     description:
       'Ijro intizomi. Idoralararo yagona elektron tizimi (yuridik tashkilotlar uchun)',
     href: 'https://adm.ijro.uz/',
-    icon: ArrowPathIcon,
+    icon: Squares2X2Icon,
   },
   {
     name: 'E-xat',
@@ -57,30 +56,27 @@ export const callsToAction = [
 ];
 export const resources = [
   {
-    name: 'Help Center',
-    description:
-      'Get all of your questions answered in our forums or contact support.',
-    href: '#',
+    name: 'UNICON-SOFT haqida',
+    description: `UNICON-SOFT haqida`,
+    href: '/bot',
     icon: LifebuoyIcon,
   },
   {
-    name: 'Guides',
-    description:
-      'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
+    name: `Qo'llanma`,
+    description: `Tizim bo'yicha qo'llanmalar`,
+    href: '/guide',
     icon: BookmarkSquareIcon,
   },
   {
-    name: 'Events',
-    description:
-      'See what meet-ups and other events we might be planning near you.',
-    href: '#',
+    name: 'Biz haqimizda',
+    description: `Bizning haqimizda ma'lumot`,
+    href: '/about',
     icon: CalendarIcon,
   },
   {
-    name: 'Security',
-    description: 'Understand how we take your privacy seriously.',
-    href: '#',
+    name: 'Yuklab olish uchun',
+    description: 'Kerakli materiallar va malumotlar',
+    href: '/download',
     icon: ShieldCheckIcon,
   },
 ];

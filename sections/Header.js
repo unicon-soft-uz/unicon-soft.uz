@@ -3,7 +3,7 @@ import { Logo } from '../components/Logo';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
+import { Popover, Transition, Listbox } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon, SunIcon, MoonIcon } from '@heroicons/react/20/solid';
 import {
@@ -59,11 +59,12 @@ export default function Header() {
   //   );
   // }
   //}
+  const [selectedPerson, setSelectedPerson] = useState(solutions[0]);
   return (
     <header>
       <Popover className="relative bg-white z-50">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+          <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10 ">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <Logo />
             </div>
@@ -111,10 +112,10 @@ export default function Header() {
                                 href={item.href}
                                 className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                               >
-                                <item.icon
+                                {/* <item.icon
                                   className="h-6 w-6 flex-shrink-0 text-indigo-600"
                                   aria-hidden="true"
-                                />
+                                /> */}
                                 <span className="ml-4">
                                   <p className="text-base font-medium text-gray-900">
                                     {item.name}
@@ -155,12 +156,12 @@ export default function Header() {
               >
                 Biz haqimizda
               </Link>
-              <a
-                href="docs"
+              <Link
+                href="/contact"
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
-                Qo&apos;llanma
-              </a>
+                Aloqa
+              </Link>
 
               <Popover className="relative z-50">
                 {({ open }) => (
@@ -171,7 +172,7 @@ export default function Header() {
                         'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                       )}
                     >
-                      <span>More</span>
+                      <span>{`Ochiq ma'lumot`}</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-gray-600' : 'text-gray-400',
@@ -199,10 +200,10 @@ export default function Header() {
                                 href={item.href}
                                 className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                               >
-                                <item.icon
+                                {/* <item.icon
                                   className="h-6 w-6 flex-shrink-0 text-indigo-600"
                                   aria-hidden="true"
-                                />
+                                /> */}
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900">
                                     {item.name}
@@ -214,7 +215,7 @@ export default function Header() {
                               </a>
                             ))}
                           </div>
-                          <div className="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
+                          {/* <div className="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
                             <div>
                               <h3 className="text-base font-medium text-gray-500">
                                 Recent Posts
@@ -244,7 +245,7 @@ export default function Header() {
                                 <span aria-hidden="true"> &rarr;</span>
                               </a>
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </Popover.Panel>
                     </Transition>
@@ -252,7 +253,9 @@ export default function Header() {
                 )}
               </Popover>
             </Popover.Group>
-            <ThemeChanger />
+            <div className=" min-[320px]: ml-3">
+              <ThemeChanger />
+            </div>
           </div>
         </div>
         <Transition
@@ -270,7 +273,7 @@ export default function Header() {
           >
             <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="px-5 pt-5 pb-6">
-                <div className="flex items-center justify-between">
+                <div className="flex items-start justify-between">
                   <div>
                     <Logo />
                   </div>
@@ -283,21 +286,38 @@ export default function Header() {
                 </div>
                 <div className="mt-6">
                   <nav className="grid gap-y-8">
-                    {solutions.map((item) => (
-                      <a
+                    {/* todo */}
+                    {resources.map((item) => (
+                      <Link
                         key={item.name}
                         href={item.href}
-                        className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
+                        className="text-base font-medium text-gray-900 hover:text-gray-700"
                       >
-                        <item.icon
-                          className="h-6 w-6 flex-shrink-0 text-indigo-600"
-                          aria-hidden="true"
-                        />
-                        <span className="ml-3 text-base font-medium text-gray-900">
-                          {item.name}
-                        </span>
-                      </a>
+                        {item.name}
+                      </Link>
                     ))}
+                    <Listbox
+                      value={selectedPerson}
+                      onChange={setSelectedPerson}
+                    >
+                      <Listbox.Button className="flex items-start text-base font-medium text-gray-900 hover:text-gray-700">
+                        Modullar
+                      </Listbox.Button>
+
+                      <Listbox.Options>
+                        {solutions.map((item) => (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            className=" flex items-start rounded-md p-3 hover:bg-gray-50"
+                          >
+                            <span className="ml-3 text-base font-medium text-gray-900">
+                              {item.name}
+                            </span>
+                          </Link>
+                        ))}
+                      </Listbox.Options>
+                    </Listbox>
                   </nav>
                 </div>
               </div>
