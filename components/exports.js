@@ -91,8 +91,88 @@ export const recentPosts = [
 ];
 
 export const TelNumber = [
-  { id: 1, number: '(95)475-47-02' },
-  { id: 2, number: '(95)475-47-03' },
-  { id: 3, number: '(95)475-47-14' },
-  { id: 4, number: '(95)505-46-46' },
+  { id: 1, icon: PhoneIcon, info: 'tex yordam', number: '(95)475-47-02' },
+  { id: 2, icon: PhoneIcon, info: 'tex yordam', number: '(95)475-47-03' },
+  {
+    id: 3,
+    icon: PhoneIcon,
+    info: 'shartnoma va buxgalteriya',
+    number: '(95)475-47-14',
+  },
+  { id: 4, icon: PhoneIcon, info: 'umumiy', number: '(95)505-46-46' },
+];
+
+export const jamoamiz = [
+  {
+    id: 1,
+    name: `RAXMATULLAYEV TEMURBEK`,
+    photo: '',
+    rol: 'rahbar',
+    skils: 'rahbar',
+    birthday: '29 ноя 1990',
+  },
+  {
+    id: 2,
+    name: 'USMONALIYEV IBROHIMJON',
+    photo: '',
+    rol: 'buxgalteriya',
+    skils: 'shartnoma, ijro',
+    birthday: '30 окт 1996',
+  },
+  {
+    id: 3,
+    name: 'HAMIDOV KOMILJON',
+    photo: '',
+    rol: 'menejer',
+    skils: 'edo, lawyer, ijro',
+    birthday: '15 июл 2000',
+  },
+  {
+    id: 4,
+    name: `VAXOBOV OTABEK`,
+    photo: '',
+    rol: 'tex',
+    skils: 'lawyer, edo, ijro, devonxona',
+    birthday: '2 дек 1996',
+  },
+  {
+    id: 5,
+    name: `BEGBOTOV SHOKIRJON`,
+    photo: '',
+    rol: 'menejer',
+    skils: 'edo, ijro, exat',
+    birthday: '1 фев 1998',
+  },
+  {
+    id: 6,
+    name: 'AMIROVA NIGINABONU',
+    photo: '',
+    rol: 'menejer',
+    skils: 'shartnoma, devonxona',
+    birthday: '11 окт 2002',
+  },
+  {
+    id: 7,
+    name: `ORIPOV TEMURMALIK`,
+    photo: '',
+    rol: 'menejer',
+    skils: 'edo, ijro, lawyer',
+    birthday: '11 фев 1997',
+  },
+  {
+    id: 8,
+    name: `YO'LDASHEV TEMUR`,
+    photo: '',
+    rol: 'menejer',
+    skils: 'edo, ijro, lawyer',
+    birthday: '9 апр 1997',
+  },
+  {
+    id: 9,
+    name: `QO'LDOSHEV AZIZBEK`,
+    photo: '',
+    rol: 'menejer',
+    skils: 'edo, ijro, lawyer',
+    birthday: '14 май 1998',
+  },
 ];

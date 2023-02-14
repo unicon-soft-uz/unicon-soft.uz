@@ -8,13 +8,23 @@ export default function Contacts(second) {
     <>
       <p className="flex items-center justify-center">BOG&apos;LANISH</p>
       {TelNumber.map((everyNumber) => (
-        <Link
-          href={`tel: +99${everyNumber.number}`}
-          key={everyNumber.id}
-          className="flex items-center justify-center"
-        >
-          <h2 className="py-2 font-sans font-bold">+998{everyNumber.number}</h2>
-        </Link>
+        <>
+          <Link
+            title={everyNumber.info}
+            href={`tel: +99${everyNumber.number}`}
+            key={everyNumber.id}
+            className="flex items-center justify-center"
+          >
+            <everyNumber.icon
+              className="h-6 w-6 flex-shrink-0 text-indigo-600"
+              aria-hidden="true"
+            />
+
+            <h2 className="py-2 font-sans font-bold">
+              +998{everyNumber.number}
+            </h2>
+          </Link>
+        </>
       ))}
 
       <div className="flex justify-center">
@@ -47,7 +57,7 @@ export default function Contacts(second) {
           height="450"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
     </>
