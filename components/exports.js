@@ -68,8 +68,8 @@ export const resources = [
     icon: BookmarkSquareIcon,
   },
   {
-    name: 'Biz haqimizda',
-    description: `Bizning haqimizda ma'lumot`,
+    name: 'Bizning jamoa',
+    description: `Bizning jamoamiz haqida ma'lumot`,
     href: '/about',
     icon: CalendarIcon,
   },
@@ -88,4 +88,11 @@ export const recentPosts = [
     href: '#',
   },
   { id: 3, name: 'Improve your customer experience', href: '#' },
+];
+
+export const TelNumber = [
+  { id: 1, number: '(95)475-47-02' },
+  { id: 2, number: '(95)475-47-03' },
+  { id: 3, number: '(95)475-47-14' },
+  { id: 4, number: '(95)505-46-46' },
 ];

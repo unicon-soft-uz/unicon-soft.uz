@@ -25,15 +25,15 @@ export default function Model3d() {
         <Canvas
           style={{
             zIndex: '1',
-            // border: 'solid',
-            // borderRadius: '50%',
+            border: 'solid',
+            borderRadius: '50%',
             aspectRatio: '1300',
             width: '40vw',
             height: '40vw',
           }}
           className=""
           camera={{
-            position: [0, 3, 6],
+            position: [0, 2, 6],
             zoom: 1.75,
           }}
         >
