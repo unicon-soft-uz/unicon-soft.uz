@@ -23,7 +23,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 98vw;
-  overflow: hidden;
+  overflow-x: hidden; /*для горизонтального*/
 }
 
 .Header {

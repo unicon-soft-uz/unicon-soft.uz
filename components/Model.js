@@ -5,7 +5,7 @@ import { useGLTF, OrbitControls } from '@react-three/drei';
 function Model(props) {
   const torusRef = useRef();
   useFrame(() => {
-    torusRef.current.rotation.y += 0.024;
+    torusRef.current.rotation.y += 0.015;
   });
   const { scene } = useGLTF('/unicon_soft_remake.glb');
   return <primitive ref={torusRef} object={scene} {...props} />;
@@ -25,11 +25,10 @@ export default function Model3d() {
         <Canvas
           style={{
             zIndex: '1',
-            border: 'solid',
-            borderRadius: '50%',
+
             aspectRatio: '1300',
-            width: '40vw',
-            height: '40vw',
+            width: '50vw',
+            height: '50vw',
           }}
           className=""
           camera={{
