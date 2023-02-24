@@ -28,37 +28,19 @@ function ThemeChanger() {
   const currentTheme = theme === 'system' ? systemTheme : theme;
   return currentTheme === 'dark' ? (
     <SunIcon
-      className="w-10 h-10 text-yellow-500 "
+      className=" text-yellow-500 sm: w-5 h-5"
       role="button"
       onClick={() => setTheme('light')}
     />
   ) : (
     <MoonIcon
-      className="w-10 h-10 text-indigo-500 "
+      className=" text-indigo-500 sm: w-5 h-5"
       role="button"
       onClick={() => setTheme('dark')}
     />
   );
 }
 export default function Header() {
-  // if (currentTheme === 'dark') {
-  //   return (
-  //     <Sun
-  //       className="w-10 h-10 text-yellow-500 "
-  //       role="button"
-  //       onClick={() => setTheme('light')}
-  //     />
-  //   );
-  // } else {
-  //   return (
-  //     <FaMoon
-  //       className="w-10 h-10 text-indigo-500 "
-  //       role="button"
-  //       onClick={() => setTheme('dark')}
-  //     />
-  //   );
-  // }
-  //}
   const [selectedPerson, setSelectedPerson] = useState(solutions[0]);
   return (
     <header>
@@ -112,10 +94,6 @@ export default function Header() {
                                 href={item.href}
                                 className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                               >
-                                {/* <item.icon
-                                  className="h-6 w-6 flex-shrink-0 text-indigo-600"
-                                  aria-hidden="true"
-                                /> */}
                                 <span className="ml-4">
                                   <p className="text-base font-medium text-gray-900">
                                     {item.name}
@@ -217,37 +195,6 @@ export default function Header() {
                               </a>
                             ))}
                           </div>
-                          {/* <div className="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
-                            <div>
-                              <h3 className="text-base font-medium text-gray-500">
-                                Recent Posts
-                              </h3>
-                              <ul role="list" className="mt-4 space-y-4">
-                                {recentPosts.map((post) => (
-                                  <li
-                                    key={post.id}
-                                    className="truncate text-base"
-                                  >
-                                    <a
-                                      href={post.href}
-                                      className="font-medium text-gray-900 hover:text-gray-700"
-                                    >
-                                      {post.name}
-                                    </a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                            <div className="mt-5 text-sm">
-                              <a
-                                href="#"
-                                className="font-medium text-indigo-600 hover:text-indigo-500"
-                              >
-                                View all posts
-                                <span aria-hidden="true"> &rarr;</span>
-                              </a>
-                            </div>
-                          </div> */}
                         </div>
                       </Popover.Panel>
                     </Transition>

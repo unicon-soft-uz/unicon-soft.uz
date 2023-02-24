@@ -10,7 +10,7 @@
 
 ### [] hamkasblar haqida ma'lumot (qo'lingdan kelsa pars qil cabinetni)
 
-### [] unicon-soft.uz domen olish
+### [x] unicon-soft.uz domen olish
 
 ### [] litsenziya, qarorlarni joylash
 
@@ -18,4 +18,4 @@
 
 ### [] video fon qoyish
 
-### [] responsive oymomo
+### [x] responsive oymomo
