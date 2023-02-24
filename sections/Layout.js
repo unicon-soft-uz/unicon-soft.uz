@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import Footer from './Footer';
 import Head from 'next/head';
 import Header from './Header';
