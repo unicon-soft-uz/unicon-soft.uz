@@ -6,7 +6,7 @@
 
 ### [] chart.js qo'shish
 
-### [] telegtam massage sender bot qo'shish
+### [xx] telegtam massage sender bot qo'shish
 
 ### [] hamkasblar haqida ma'lumot (qo'lingdan kelsa pars qil cabinetni)
 
