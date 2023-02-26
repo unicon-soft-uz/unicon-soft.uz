@@ -3,7 +3,12 @@ import { Logo } from '../components/Logo';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { Popover, Listbox } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import {
+  Bars3Icon,
+  XMarkIcon,
+  PhoneIcon,
+  ChartBarIcon,
+} from '@heroicons/react/24/outline';
 import { ChevronDownIcon, SunIcon, MoonIcon } from '@heroicons/react/20/solid';
 import { solutions, callsToAction, resources } from '../components/exports';
 
@@ -217,9 +222,37 @@ export default function Header() {
                     {item.name}
                   </Link>
                 ))}
+                <Link
+                  href="/info"
+                  className="flex text-base font-medium text-gray-500 hover:text-gray-900"
+                  passHref
+                >
+                  <ChartBarIcon
+                    className="h-5 w-5 flex-shrink-0 text-indigo-600 mx-1 my-1"
+                    aria-hidden="true"
+                  />
+                  <span className="text-base font-medium text-gray-900">
+                    Biz haqimizda
+                  </span>
+                </Link>
+
+                <Link
+                  href="/contact"
+                  className="flex text-base font-medium text-gray-500 hover:text-gray-900"
+                  passHref
+                >
+                  <PhoneIcon
+                    className="h-5 w-5 flex-shrink-0 text-indigo-600 mx-1 my-1"
+                    aria-hidden="true"
+                  />
+                  <span className="text-base font-medium text-gray-900">
+                    Aloqa
+                  </span>
+                </Link>
+
                 <Listbox value={selected} onChange={setSelected}>
                   <Listbox.Button className="flex items-start text-base font-medium text-gray-900 hover:text-gray-700">
-                    <Bars3Icon
+                    <ChevronDownIcon
                       className="mx-1 h-6 w-6  text-indigo-600"
                       aria-hidden="true"
                     />
@@ -231,7 +264,7 @@ export default function Header() {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className=" flex items-start rounded-md p-3 hover:bg-gray-50"
+                        className=" bg-gray-50 flex items-start rounded-md p-3 hover:bg-gray-50"
                       >
                         <span className="ml-3 text-base font-medium text-gray-900">
                           {item.name}
@@ -239,6 +272,22 @@ export default function Header() {
                       </Link>
                     ))}
                   </Listbox.Options>
+                  <div className=" bg-gray-50 px-5 py-5 flex justify-center space-x-5">
+                    {callsToAction.map((item) => (
+                      <div key={item.name} className="flow-root">
+                        <Link
+                          href={item.href}
+                          className=" flex items-center rounded-md  text-base font-medium text-gray-900 hover:bg-gray-100"
+                        >
+                          <item.icon
+                            className="h-6 w-6 flex-shrink-0 text-indigo-500"
+                            aria-hidden="true"
+                          />
+                          <span className="ml-3">{item.name}</span>
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
                 </Listbox>
               </nav>
             </div>
