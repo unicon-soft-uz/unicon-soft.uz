@@ -34,8 +34,8 @@ body {
   width: auto;
 }
 .Canvas {
-  width: 35vw;
-  height: 35vw;
+  width: 40vw;
+  height: 40vw;
   z-index: 1;
 }
 .mesh {

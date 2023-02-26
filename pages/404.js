@@ -3,7 +3,7 @@ export default function NotFound() {
   return (
     <>
       <Header />
-      404
+      Hechnima topilmadi...
     </>
   );
 }

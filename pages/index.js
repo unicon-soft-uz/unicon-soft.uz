@@ -5,7 +5,9 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <div className="Home">{/* <Model3d /> */}</div>
+      <div className="Home">
+        <Model3d />
+      </div>
     </>
   );
 }
