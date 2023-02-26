@@ -1,3 +1,10 @@
+import moliya from '../public/moliya.png';
+import mitc from '../public/mitc.png';
+import adliya from '../public/adliya.png';
+import gerb from '../public/gerb.png';
+import admin from '../public/admin.png';
+import akt from '../public/akt.png';
+import park from '../public/park.png';
 import {
   ArrowPathIcon,
   BookmarkSquareIcon,
@@ -121,6 +128,7 @@ export const Hamkorlar = [
     link: 'https://adliya.uz/',
     number: '1008',
     email: 'info@adliya.uz',
+    image: adliya,
   },
   {
     id: 2,
@@ -128,6 +136,7 @@ export const Hamkorlar = [
     link: 'https://president.uz/uz/pages/view/about_staff?menu_id=15',
     number: '1213',
     email: 'https://murojaat.gov.uz/oz?organization_id=6133',
+    image: admin,
   },
   {
     id: 3,
@@ -135,6 +144,7 @@ export const Hamkorlar = [
     link: 'https://mitc.uz/uz/',
     number: '1199',
     email: 'mitc@exat.uz',
+    image: mitc,
   },
   {
     id: 4,
@@ -142,5 +152,22 @@ export const Hamkorlar = [
     link: 'https://mineconomy.uz/',
     number: '1171',
     email: 'info@mineconomy.uz',
+    image: moliya,
+  },
+  {
+    id: 5,
+    name: "O'zbekiston Respublikasi Raqamli texnologiyalar vazirligi",
+    link: 'https://digital.uz/',
+    number: '1191',
+    email: 'info@mineconomy.uz',
+    image: akt,
+  },
+  {
+    id: 6,
+    name: 'IT-PARK',
+    link: 'https://it-park.uz/uz/itpark',
+    number: '+998 71 209 11 99',
+    email: 'info@it-park.uz',
+    image: park,
   },
 ];

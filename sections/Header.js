@@ -81,7 +81,7 @@ export default function Header() {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {solutions.map((item) => (
-                            <a
+                            <Link
                               key={item.name}
                               href={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
@@ -94,13 +94,13 @@ export default function Header() {
                                   {item.description}
                                 </p>
                               </span>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                           {callsToAction.map((item) => (
                             <div key={item.name} className="flow-root">
-                              <a
+                              <Link
                                 href={item.href}
                                 className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                               >
@@ -109,7 +109,7 @@ export default function Header() {
                                   aria-hidden="true"
                                 />
                                 <span className="ml-3">{item.name}</span>
-                              </a>
+                              </Link>
                             </div>
                           ))}
                         </div>
