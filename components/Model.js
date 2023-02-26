@@ -24,6 +24,8 @@ export default function Model3d() {
       <div className="flex justify-center">
         <Canvas
           style={{
+            display: 'flex',
+            justifyContent: 'center',
             zIndex: '1',
 
             width: 400,
