@@ -8,6 +8,7 @@ import {
   XMarkIcon,
   PhoneIcon,
   ChartBarIcon,
+  BookmarkSquareIcon,
 } from '@heroicons/react/24/outline';
 import { ChevronDownIcon, SunIcon, MoonIcon } from '@heroicons/react/20/solid';
 import { solutions, callsToAction, resources } from '../components/exports';
@@ -120,10 +121,14 @@ export default function Header() {
 
               <Link
                 href="/info"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="flex text-base font-medium text-gray-500 hover:text-gray-900"
                 passHref
               >
-                Biz haqimizda
+                <ChartBarIcon
+                  className="h-5 w-5 flex-shrink-0 text-indigo-600 mx-1"
+                  aria-hidden="true"
+                />
+                Statistika
               </Link>
 
               <Link
@@ -132,7 +137,7 @@ export default function Header() {
                 passHref
               >
                 <PhoneIcon
-                  className="h-5 w-5 flex-shrink-0 text-indigo-600 mx-1 my-1"
+                  className="h-5 w-5 flex-shrink-0 text-indigo-600 mx-1"
                   aria-hidden="true"
                 />
                 Aloqa
@@ -147,6 +152,7 @@ export default function Header() {
                         'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                       )}
                     >
+                      <BookmarkSquareIcon className="h-5 w-5 flex-shrink-0 text-indigo-600 mx-1" />
                       <span>{`Ochiq ma'lumot`}</span>
                       <ChevronDownIcon
                         className={classNames(
@@ -156,7 +162,6 @@ export default function Header() {
                         aria-hidden="true"
                       />
                     </Popover.Button>
-
                     <Popover.Panel className="absolute left-1/2 z-50 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
                       <div className=" rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
@@ -232,7 +237,7 @@ export default function Header() {
                     aria-hidden="true"
                   />
                   <span className="text-base font-medium text-gray-900">
-                    Biz haqimizda
+                    Statistika
                   </span>
                 </Link>
 
@@ -272,7 +277,7 @@ export default function Header() {
                       </Link>
                     ))}
                   </Listbox.Options>
-                  <div className=" bg-gray-50 px-5 py-5 flex justify-center space-x-5">
+                  <div className=" bg-gray-50 px-5 py-5 flex justify-start space-x-5">
                     {callsToAction.map((item) => (
                       <div key={item.name} className="flow-root">
                         <Link

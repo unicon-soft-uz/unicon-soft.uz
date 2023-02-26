@@ -38,10 +38,6 @@ body {
   height: 40vw;
   z-index: 1;
 }
-.mesh {
-  display: flex;
-  justify-content: center;
-}
 
 .video {
   width: 100%;

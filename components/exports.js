@@ -113,3 +113,34 @@ export const TelNumber = [
   },
   { id: 4, icon: PhoneIcon, info: 'umumiy', number: '(95)505-46-46' },
 ];
+
+export const Hamkorlar = [
+  {
+    id: 1,
+    name: "O'zbekiston Respublikasi Adliya vazirligi",
+    link: 'https://adliya.uz/',
+    number: '1008',
+    email: 'info@adliya.uz',
+  },
+  {
+    id: 2,
+    name: "O'zbekiston Respublikasi Prezidenti Administratsiyasi",
+    link: 'https://president.uz/uz/pages/view/about_staff?menu_id=15',
+    number: '1213',
+    email: 'https://murojaat.gov.uz/oz?organization_id=6133',
+  },
+  {
+    id: 3,
+    name: "O'zbekiston Respublikasi Axborot texnologiyalari va kommunikatsiyalarini rivojlantirish vazirligi",
+    link: 'https://mitc.uz/uz/',
+    number: '1199',
+    email: 'mitc@exat.uz',
+  },
+  {
+    id: 4,
+    name: "O'zbekiston Respublikasi Iqtisodiy taraqqiyot va kambag'allikni qisqartirish vazirligi",
+    link: 'https://mineconomy.uz/',
+    number: '1171',
+    email: 'info@mineconomy.uz',
+  },
+];

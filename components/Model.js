@@ -5,7 +5,7 @@ import { useGLTF, OrbitControls } from '@react-three/drei';
 function Model(props) {
   const torusRef = useRef();
   useFrame(() => {
-    torusRef.current.rotation.y += 0.018;
+    torusRef.current.rotation.y += 0.03;
   });
   const { scene } = useGLTF('/unicon_soft_remake.glb');
   return <primitive ref={torusRef} object={scene} {...props} />;
@@ -21,16 +21,15 @@ function LightBulb(props) {
 export default function Model3d() {
   return (
     <>
-      <div className="mesh">
+      <div className="flex justify-center">
         <Canvas
           style={{
             zIndex: '1',
 
-            aspectRatio: '1300',
-            width: '50vw',
-            height: '50vw',
+            width: 400,
+            height: 400,
           }}
-          className=""
+          className="flex sm: w-96 h-80"
           camera={{
             position: [0, 2, 6],
             zoom: 1.75,
@@ -43,7 +42,6 @@ export default function Model3d() {
           <Model position={[0, -1.6, 0]} />
           <OrbitControls
             minAzimuthAngle={Math.PI}
-            maxAzimuthAngle={Math.PI / 4}
             minPolarAngle={Math.PI / 6}
             maxPolarAngle={Math.PI - Math.PI / 2}
             enableZoom={false}

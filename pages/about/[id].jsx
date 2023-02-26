@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import alternative from '../../public/alter.jpg';
 import Header from '../../sections/Header';
+import { ArrowLeftCircleIcon } from '@heroicons/react/24/outline';
 export default function EveryPerson() {
   const router = useRouter();
   const data = router.query;
@@ -11,7 +12,8 @@ export default function EveryPerson() {
     <>
       <Header />
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <Link className=" text-sm flex justify-center" href="/about">
+        <Link className="text-sm flex justify-center" href="/about">
+          <ArrowLeftCircleIcon className="h-5 w-5 flex-shrink-0 text-indigo-600 mx-1" />
           Ortga
         </Link>
         <div className="mt-6 flex justify-center">
