@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import Friends from './Friends';
 function Footer(args) {
   return (
-    <footer className="px-4 sm:px-6 py-6 mt-16">
+    <footer className="px-4 sm:pt-6 py-6 mt-16">
+      <Friends />
       <div className="flex flex-col text-center text-sm text-gray-500">
         <span className="dark:text-gray-100 text-gray-900 font-bold text-lg  py-2">
           UNICON-SOFT

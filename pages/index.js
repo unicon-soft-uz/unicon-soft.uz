@@ -7,7 +7,6 @@ export default function HomePage() {
       <Header />
 
       {/* <Model3d /> */}
-      <Friends />
     </>
   );
 }

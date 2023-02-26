@@ -5,8 +5,8 @@ import Image from 'next/image';
 export default function Friends() {
   return (
     <>
-      <div className=" py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className=" py-6 sm:pt-32">
+        <div className="mx-auto max-w-7xl px-6 lg:pt-8">
           <h2 className="text-center text-lg font-semibold leading-8">
             Bizning hamkorlarimiz
           </h2>
