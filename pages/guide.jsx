@@ -1,3 +1,9 @@
+import Header from '../sections/Header';
 export default function Guide() {
-  return <>guide</>;
+  return (
+    <>
+      <Header />
+      guide
+    </>
+  );
 }

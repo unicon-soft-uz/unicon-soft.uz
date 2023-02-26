@@ -1,3 +1,9 @@
+import Header from '../sections/Header';
 export default function NotFound() {
-  return <>404</>;
+  return (
+    <>
+      <Header />
+      404
+    </>
+  );
 }

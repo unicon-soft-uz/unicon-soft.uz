@@ -24,9 +24,8 @@ export function Layout({ children }) {
         <title>UNICON-SOFT</title>
       </Head>
 
-      <div className=" mx-auto flex flex-col">
-        <Header />
-        <main className="container mx-auto px-4 sm:px-6">{children}</main>
+      <div className="flex flex-col">
+        <main className="">{children}</main>
         <Footer />
       </div>
     </>

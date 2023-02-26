@@ -15,7 +15,8 @@ export const solutions = [
     name: 'pa.ijro.uz',
     description:
       'O‘zbekiston Respublikasi Prezidentining farmon, qaror, farmoyish va topshiriqlari monitoring qilish tizimi',
-    href: 'https://pa.ijro.uz/',
+    // href: 'https://pa.ijro.uz/',
+    href: '/guide',
     icon: ChartBarIcon,
   },
   {

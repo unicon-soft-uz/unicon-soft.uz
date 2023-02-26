@@ -36,9 +36,10 @@ function ThemeChanger() {
 }
 export default function Header() {
   const [selected, setSelected] = useState(solutions[0]);
+
   return (
     <header>
-      <Popover className="relative bg-white z-50">
+      <Popover className="relative bg-white z-50 w-auto m-0 p-0">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10 ">
             <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -201,48 +202,45 @@ export default function Header() {
                   </Popover.Button>
                 </div>
               </div>
-              <div className="mt-6">
-                <nav className="grid gap-y-8">
-                  {/* todo */}
-                  {resources.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="flex text-base font-medium text-gray-900 hover:text-gray-700"
-                      onClick={null}
-                    >
-                      <item.icon
-                        className="mx-1 h-6 w-6  text-indigo-600"
-                        aria-hidden="true"
-                      />
-                      {item.name}
-                    </Link>
-                  ))}
-                  <Listbox value={selected} onChange={setSelected}>
-                    <Listbox.Button className="flex items-start text-base font-medium text-gray-900 hover:text-gray-700">
-                      <Bars3Icon
-                        className="mx-1 h-6 w-6  text-indigo-600"
-                        aria-hidden="true"
-                      />
-                      Modullar
-                    </Listbox.Button>
+              <nav className="grid gap-y-8">
+                {/* todo */}
+                {resources.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="flex text-base font-medium text-gray-900 hover:text-gray-700"
+                  >
+                    <item.icon
+                      className="mx-1 h-6 w-6  text-indigo-600"
+                      aria-hidden="true"
+                    />
+                    {item.name}
+                  </Link>
+                ))}
+                <Listbox value={selected} onChange={setSelected}>
+                  <Listbox.Button className="flex items-start text-base font-medium text-gray-900 hover:text-gray-700">
+                    <Bars3Icon
+                      className="mx-1 h-6 w-6  text-indigo-600"
+                      aria-hidden="true"
+                    />
+                    Modullar
+                  </Listbox.Button>
 
-                    <Listbox.Options>
-                      {solutions.map((item) => (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          className=" flex items-start rounded-md p-3 hover:bg-gray-50"
-                        >
-                          <span className="ml-3 text-base font-medium text-gray-900">
-                            {item.name}
-                          </span>
-                        </Link>
-                      ))}
-                    </Listbox.Options>
-                  </Listbox>
-                </nav>
-              </div>
+                  <Listbox.Options>
+                    {solutions.map((item) => (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className=" flex items-start rounded-md p-3 hover:bg-gray-50"
+                      >
+                        <span className="ml-3 text-base font-medium text-gray-900">
+                          {item.name}
+                        </span>
+                      </Link>
+                    ))}
+                  </Listbox.Options>
+                </Listbox>
+              </nav>
             </div>
           </div>
         </Popover.Panel>

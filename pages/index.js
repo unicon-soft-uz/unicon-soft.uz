@@ -1,5 +1,11 @@
 import Model3d from '../components/Model';
+import Header from '../sections/Header';
 
 export default function HomePage() {
-  return <div className="Home">{/* <Model3d /> */}</div>;
+  return (
+    <>
+      <Header />
+      <div className="Home">{/* <Model3d /> */}</div>
+    </>
+  );
 }

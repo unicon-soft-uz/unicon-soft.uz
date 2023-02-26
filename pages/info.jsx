@@ -9,6 +9,7 @@ import {
   LinearScale,
 } from 'chart.js';
 import { Doughnut, Bar } from 'react-chartjs-2';
+import Header from '../sections/Header';
 
 ChartJS.register(
   LinearScale,
@@ -61,6 +62,7 @@ export const data = {
 export default function InfoPage() {
   return (
     <>
+      <Header />
       <div className="flex flex-col my-20 mx-auto px-4 sm:px-6 ">
         <Bar className="my-20 max-w-screen-lg" options={options} data={data} />
         <Doughnut className="my-20 max-w-screen-lg" data={data} />

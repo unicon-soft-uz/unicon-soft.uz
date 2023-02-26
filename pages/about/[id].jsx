@@ -2,13 +2,14 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import alternative from '../../public/alter.jpg';
-
+import Header from '../../sections/Header';
 export default function EveryPerson() {
   const router = useRouter();
   const data = router.query;
 
   return (
     <>
+      <Header />
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <Link className=" text-sm flex justify-center" href="/about">
           Ortga

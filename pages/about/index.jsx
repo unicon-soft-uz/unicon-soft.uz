@@ -1,5 +1,6 @@
 import Guyz from '../../components/Guyz';
 import { useState, useEffect } from 'react';
+import Header from '../../sections/Header';
 const url = `https://raw.githubusercontent.com/unicon-soft-uz/data/main/data.json`;
 
 export default function About() {
@@ -20,6 +21,7 @@ export default function About() {
 
   return (
     <>
+      <Header />
       <Guyz props={data} />
     </>
   );
