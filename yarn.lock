@@ -204,6 +204,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@faker-js/faker@npm:^7.6.0":
+  version: 7.6.0
+  resolution: "@faker-js/faker@npm:7.6.0"
+  checksum: 942af6221774e8c98a0eb6bc75265e05fb81a941170377666c3439aab9495dd321d6beedc5406f07e6ad44262b3e43c20961f666d116ad150b78e7437dd1bb2b
+  languageName: node
+  linkType: hard
+
 "@formatjs/intl-localematcher@npm:^0.2.32":
   version: 0.2.32
   resolution: "@formatjs/intl-localematcher@npm:0.2.32"
@@ -2327,6 +2334,13 @@ __metadata:
   version: 2.0.3
   resolution: "esutils@npm:2.0.3"
   checksum: 22b5b08f74737379a840b8ed2036a5fb35826c709ab000683b092d9054e5c2a82c27818f12604bfc2a9a76b90b6834ef081edbc1c7ae30d1627012e067c6ec87
+  languageName: node
+  linkType: hard
+
+"faker@npm:^6.6.6":
+  version: 6.6.6
+  resolution: "faker@npm:6.6.6"
+  checksum: bfb0d581ab4d76095f2c6bff213fe1735ce077f0f8df849c144ad26035e105bce1b7a704cc030366338c52e25b636ac097a712426a78c9b8804af78f6f2bffe7
   languageName: node
   linkType: hard
 
@@ -5144,6 +5158,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "soft@workspace:."
   dependencies:
+    "@faker-js/faker": ^7.6.0
     "@formatjs/intl-localematcher": ^0.2.32
     "@headlessui/react": ^1.7.10
     "@heroicons/react": ^2.0.15
@@ -5154,6 +5169,7 @@ __metadata:
     depcheck: ^1.4.3
     eslint: 8.33.0
     eslint-config-next: 13.1.6
+    faker: ^6.6.6
     i18next: ^22.4.9
     negotiator: ^0.6.3
     next: 13.1.6

@@ -16,6 +16,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@formatjs/intl-localematcher": "^0.2.32",
     "@headlessui/react": "^1.7.10",
     "@heroicons/react": "^2.0.15",
