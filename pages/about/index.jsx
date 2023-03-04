@@ -1,7 +1,7 @@
 import Guyz from '../../components/Guyz';
 import { useState, useEffect } from 'react';
 import Header from '../../sections/Header';
-const url = `https://raw.githubusercontent.com/unicon-soft-uz/data/main/data.json`;
+export const url = `https://raw.githubusercontent.com/unicon-soft-uz/data/main/data.json`;
 
 export default function About() {
   const [data, setData] = useState(null);
