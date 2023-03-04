@@ -16,7 +16,7 @@ export default function Contacts() {
           title={everyNumber.info}
           href={`tel: +99${everyNumber.number}`}
           key={everyNumber.id}
-          className="flex items-center justify-center"
+          className="flex items-center justify-center lg:mx-96"
         >
           <everyNumber.icon
             className="h-6 w-6 mx-2 text-indigo-600"
