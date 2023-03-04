@@ -16,6 +16,8 @@
 
 ### [] yuklab olinadigan programmalar saxifasi
 
-### [] video fon qoyish
+### [xx] video fon qoyish
 
 ### [x] responsive oymomo
+
+### [x] sitemap

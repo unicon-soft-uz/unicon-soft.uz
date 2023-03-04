@@ -39,6 +39,7 @@ export const options = {
     },
   },
 };
+//2386
 const fak = faker.datatype.number({ min: 400, max: 500 });
 const fak2 = faker.datatype.number({ min: 100, max: 150 });
 const fak3 = faker.datatype.number({ min: 200, max: 400 });
@@ -73,6 +74,7 @@ export default function InfoPage() {
         />
         <Doughnut className="max-h-96 max-w-screen-sm" data={data} />
       </div>
+      <LineStat />
     </>
   );
 }
@@ -91,6 +93,18 @@ const labels = [
   'Noy',
   'Dek',
 ];
+export const options2 = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'bottom',
+    },
+    title: {
+      display: true,
+      text: '',
+    },
+  },
+};
 
 export const data2 = {
   labels,
@@ -99,7 +113,7 @@ export const data2 = {
       fill: false,
       label: 'ijro.gov.uz',
       data: labels.map(() =>
-        faker.datatype.number({ min: 1800, max: 2500, precision: 10 })
+        faker.datatype.number({ min: 400, max: 500, precision: 10 })
       ),
       borderColor: 'rgb(60, 162, 235)',
       backgroundColor: 'rgba(53, 162, 235, 0.5)',
@@ -107,9 +121,17 @@ export const data2 = {
     {
       label: 'lawyer.ijro.uz',
       data: labels.map(() =>
-        faker.datatype.number({ min: 1800, max: 2000, precision: 10 })
+        faker.datatype.number({ min: 250, max: 350, precision: 10 })
       ),
-      borderColor: 'rgba(255, 99, 132)',
+      borderColor: 'rgba(255, 206, 86, 0.5)',
+      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+    },
+    {
+      label: 'e-xat',
+      data: labels.map(() =>
+        faker.datatype.number({ min: 100, max: 150, precision: 10 })
+      ),
+      borderColor: 'rgba(255, 99, 132, 0.5)',
       backgroundColor: 'rgba(53, 162, 235, 0.5)',
     },
   ],
@@ -120,7 +142,7 @@ export function LineStat() {
     <div className="flex  text-center justify-center pt-10  px-4 sm:px-6 flex-col lg:flex-row">
       <Line
         className="max-h-96 max-w-screen-sm"
-        options={options}
+        options={options2}
         data={data2}
       />
     </div>

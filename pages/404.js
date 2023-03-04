@@ -3,7 +3,9 @@ export default function NotFound() {
   return (
     <>
       <Header />
-      Hechnima topilmadi...
+      <h1 className="flex justify-center text-center pt-10">
+        Hechnima topilmadi...
+      </h1>
     </>
   );
 }
