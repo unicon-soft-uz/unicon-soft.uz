@@ -1,6 +1,6 @@
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/uz',
+  basePath: '/',
   webpack: (config, { isServer }) => {
     if (isServer) {
       require('./scripts/sitemap-generator');

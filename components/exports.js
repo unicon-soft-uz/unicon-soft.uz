@@ -18,14 +18,14 @@ import {
   Squares2X2Icon,
 } from '@heroicons/react/24/outline';
 export const solutions = [
-  {
-    name: 'pa.ijro.uz',
-    description:
-      'O‘zbekiston Respublikasi Prezidentining farmon, qaror, farmoyish va topshiriqlari monitoring qilish tizimi',
-    // href: 'https://pa.ijro.uz/',
-    href: '/guide',
-    icon: ChartBarIcon,
-  },
+  // {
+  //   name: 'pa.ijro.uz',
+  //   description:
+  //     'O‘zbekiston Respublikasi Prezidentining farmon, qaror, farmoyish va topshiriqlari monitoring qilish tizimi',
+  //   // href: 'https://pa.ijro.uz/',
+  //   href: '/guide',
+  //   icon: ChartBarIcon,
+  // },
   {
     name: 'ijro.gov.uz',
     description:
@@ -98,15 +98,6 @@ export const resources = [
     href: '/download',
     icon: ShieldCheckIcon,
   },
-];
-export const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  {
-    id: 2,
-    name: 'How to use search engine optimization to drive traffic to your site',
-    href: '#',
-  },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
 ];
 
 export const TelNumber = [
