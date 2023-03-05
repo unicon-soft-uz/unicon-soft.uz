@@ -8,7 +8,7 @@ export default function Contacts() {
   return (
     <>
       <Header />
-      <p className="flex pt-10 items-center justify-center">
+      <p className="flex pt-10 items-center justify-center mx-auto">
         Biz bilan bog&apos;lanish
       </p>
       {TelNumber.map((everyNumber) => (
