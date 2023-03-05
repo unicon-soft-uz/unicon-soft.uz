@@ -1,7 +1,5 @@
 import Footer from './Footer';
 import Head from 'next/head';
-import Header from './Header';
-
 export function Layout({ children }) {
   return (
     <>

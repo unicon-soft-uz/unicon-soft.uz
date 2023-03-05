@@ -7,6 +7,10 @@ const nextConfig = {
     }
     return config;
   },
+  i18n: {
+    locales: ['uz'],
+    defaultLocale: 'uz',
+  },
   env: {
     WEBSITE_URL: process.env.WEBSITE_URL || process.env.DOMEN_URL,
   },
