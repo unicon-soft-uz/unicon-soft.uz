@@ -77,7 +77,7 @@ export const resources = [
   {
     name: 'UNICON-SOFT haqida',
     description: `UNICON-SOFT haqida`,
-    href: '/',
+    href: '/general',
     icon: LifebuoyIcon,
   },
   {

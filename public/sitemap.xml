@@ -2,37 +2,49 @@
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://localhost:3000/404</loc>
-    <lastmod>2023-03-05T09:32:03.960Z</lastmod>
+    <lastmod>2023-03-05T13:02:28.238Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/contact</loc>
-    <lastmod>2023-03-05T09:32:03.961Z</lastmod>
+    <lastmod>2023-03-05T13:02:28.244Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/download</loc>
-    <lastmod>2023-03-05T09:32:03.961Z</lastmod>
+    <lastmod>2023-03-05T13:02:28.244Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/guide</loc>
-    <lastmod>2023-03-05T09:32:03.961Z</lastmod>
+    <lastmod>2023-03-05T13:02:28.244Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/index</loc>
-    <lastmod>2023-03-05T09:32:03.961Z</lastmod>
+    <lastmod>2023-03-05T13:02:28.244Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:3000/info</loc>
-    <lastmod>2023-03-05T09:32:03.961Z</lastmod>
+    <lastmod>2023-03-05T13:02:28.244Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:3000/about/index</loc>
+    <lastmod>2023-03-05T13:02:28.244Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:3000/about/[id]</loc>
+    <lastmod>2023-03-05T13:02:28.244Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
