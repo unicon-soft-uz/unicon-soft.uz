@@ -8,7 +8,7 @@ function addPage(page) {
     .replace('.jsx', '');
   const route = path;
   return `  <url>
-    <loc>${`${process.env.WEBSITE_URL}${route}`}</loc>
+    <loc>${`${process.env.DOMEN_URL}${route}`}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -22,6 +22,7 @@ async function generateSitemap() {
     '!pages/_*.js',
     '!pages/api',
     '!pages/404',
+    '!pages/[id]',
   ]);
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

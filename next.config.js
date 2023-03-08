@@ -12,7 +12,8 @@ const nextConfig = {
     defaultLocale: 'uz',
   },
   env: {
-    WEBSITE_URL: process.env.WEBSITE_URL || process.env.DOMEN_URL,
+    DOMEN_URL: process.env.WEBSITE_URL || process.env.DOMEN_URL,
+    DATA_URL: process.env.DATA_URL,
   },
   images: {
     remotePatterns: [

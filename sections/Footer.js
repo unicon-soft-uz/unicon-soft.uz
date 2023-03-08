@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Friends from './Friends';
 function Footer(args) {
   return (
@@ -9,9 +8,9 @@ function Footer(args) {
           UNICON-SOFT
         </span>
 
-        <Link className="py-2 font-bold text-lg" href="#">
+        <span className="py-2 font-bold text-lg" href="#">
           us@exat.uz
-        </Link>
+        </span>
         <span className="py-2">
           &copy; {new Date().getFullYear()} Barcha huquqlar himoyalangan
         </span>
