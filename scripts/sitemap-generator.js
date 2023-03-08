@@ -8,7 +8,7 @@ function addPage(page) {
     .replace('.jsx', '');
   const route = path;
   return `  <url>
-    <loc>${`${process.env.DOMEN_URL}${route}`}</loc>
+    <loc>${`https://www.unicon-soft.uz${route}`}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

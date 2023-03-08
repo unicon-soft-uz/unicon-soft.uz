@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import alternative from '../public/alter.jpg';
+import { url } from '../pages/about';
 export default function Gallery() {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
-    fetch(process.env.DATA_URL)
+    fetch(url)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
