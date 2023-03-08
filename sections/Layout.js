@@ -6,6 +6,10 @@ export function Layout({ children }) {
       <Head>
         <meta charset="UTF-8"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="google-site-verification"
+          content="KsFPz7t5UOorMmRtfq1RYEkyq906BuE3nXKzWf9uOt0"
+        />
         <link
           rel="icon"
           type="image/png"
