@@ -2,7 +2,7 @@
 
 ### [x] icon larni tog'ri qo'yish
 
-### [] localizatsiya ru uz qo'shish
+### [xx] localizatsiya ru uz qo'shish
 
 ### [x] chart.js qo'shish
 
@@ -14,7 +14,7 @@
 
 ### [] litsenziya, qarorlarni joylash
 
-### [] yuklab olinadigan programmalar saxifasi
+### [x] yuklab olinadigan programmalar saxifasi
 
 ### [xx] video fon qoyish
 

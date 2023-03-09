@@ -14,6 +14,7 @@ const nextConfig = {
   env: {
     DOMEN_URL: process.env.WEBSITE_URL || process.env.DOMEN_URL,
     DATA_URL: process.env.DATA_URL,
+    GIT_SOFT: process.env.GIT_SOFT,
   },
   images: {
     remotePatterns: [

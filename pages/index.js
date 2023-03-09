@@ -6,6 +6,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
+
       <Gallery />
       {/* <Model3d /> */}
       {/* <LineStat /> */}
