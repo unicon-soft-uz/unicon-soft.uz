@@ -1,13 +1,14 @@
 import Model3d from '../components/Model';
+import Adminka from '../components/adminka';
 import Gallery from '../components/gallery';
+import DataForm from '../libs/DataForm';
 import Header from '../sections/Header';
 import { LineStat } from './info';
 export default function HomePage() {
   return (
     <>
       <Header />
-
-      <Gallery />
+      {/* <Gallery /> */}
       {/* <Model3d /> */}
       {/* <LineStat /> */}
     </>

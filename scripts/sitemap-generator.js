@@ -22,8 +22,8 @@ async function generateSitemap() {
     '!pages/_*.js',
     '!pages/api',
     '!pages/404',
-    '!pages/about/index',
-    '!pages/about/[id]',
+    '!pages/about',
+    '!pages/about/*.js',
     '!pages/admin',
   ]);
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

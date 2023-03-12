@@ -21,3 +21,7 @@
 ### [x] responsive oymomo
 
 ### [x] sitemap
+
+### [] fix reload Admin component
+
+### [] add full CRUD

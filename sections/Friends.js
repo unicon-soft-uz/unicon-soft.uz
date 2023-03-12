@@ -24,6 +24,7 @@ export default function Friends() {
                   alt={items.name}
                   width={158}
                   height={48}
+                  priority
                 />
               </Link>
             ))}

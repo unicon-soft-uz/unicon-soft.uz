@@ -12,9 +12,8 @@ const nextConfig = {
     defaultLocale: 'uz',
   },
   env: {
-    DOMEN_URL: process.env.WEBSITE_URL || process.env.DOMEN_URL,
-    DATA_URL: process.env.DATA_URL,
-    GIT_SOFT: process.env.GIT_SOFT,
+    DOMEN_URL: process.env.DOMEN_URL || process.env.local.DOMEN_URL,
+    REDIS_URL: process.env.REDIS_URL || process.env.local.REDIS_URL,
   },
   images: {
     remotePatterns: [
