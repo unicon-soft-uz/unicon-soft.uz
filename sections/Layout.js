@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import Footer from './Footer';
 import Head from 'next/head';
 export function Layout({ children }) {
@@ -30,6 +31,24 @@ export function Layout({ children }) {
         <main className="">{children}</main>
         <Footer />
       </div>
+      <Script
+        strategy="afterInteractive"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-M5ZZP3N84S"
+      />
+
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-M5ZZP3N84S', {
+                    page_path: window.location.pathname,
+                                  });`,
+        }}
+      />
     </>
   );
 }
