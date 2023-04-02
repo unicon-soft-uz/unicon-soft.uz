@@ -26,17 +26,6 @@ export function Layout({ children }) {
 
         <title>UNICON-SOFT</title>
       </Head>
-
-      <div className="flex flex-col">
-        <main className="">{children}</main>
-        <Footer />
-      </div>
-      <Script
-        strategy="afterInteractive"
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-M5ZZP3N84S"
-      />
-
       <Script
         id="google-analytics"
         strategy="afterInteractive"
@@ -48,6 +37,15 @@ export function Layout({ children }) {
                     page_path: window.location.pathname,
                                   });`,
         }}
+      />
+      <div className="flex flex-col">
+        <main className="">{children}</main>
+        <Footer />
+      </div>
+      <Script
+        strategy="afterInteractive"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-M5ZZP3N84S"
       />
     </>
   );
