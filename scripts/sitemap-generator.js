@@ -21,7 +21,6 @@ async function generateSitemap() {
     'pages/**/*{.js,.mdx,.jsx,.ts}',
     '!pages/_*.js',
     '!pages/api',
-    '!pages/404',
     '!pages/about',
     '!pages/about/*.js',
     '!pages/admin',
