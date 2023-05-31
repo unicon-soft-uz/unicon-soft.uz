@@ -1,15 +1,18 @@
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 import { Layout } from '../sections/Layout';
-// @ts-ignore
-import type { AppProps } from 'next/app';
-// @ts-ignore
 import { ThemeProvider } from 'next-themes';
+import { ReactNode } from 'react';
+
+type App = {
+  Component: string;
+  pageProps: { session: ReactNode };
+};
 
 export default function MyApp({
   Component,
   pageProps: { session, ...pageProps },
-}: AppProps) {
+}: App): JSX.Element {
   return (
     <>
       <ThemeProvider enableSystem={true} attribute="class">

@@ -1,7 +1,13 @@
 import Script from 'next/script';
 import Footer from './Footer';
 import Head from 'next/head';
-export function Layout({ children }) {
+import { ReactNode } from 'react';
+
+type Props = {
+  children?: ReactNode;
+};
+
+export function Layout({ children }: Props) {
   return (
     <>
       <Head>

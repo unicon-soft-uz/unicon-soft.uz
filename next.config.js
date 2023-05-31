@@ -5,13 +5,14 @@ const nextConfig = {
     if (isServer) {
       require('./scripts/sitemap-generator');
     }
+    config.resolve.extensions.push('.ts', '.tsx');
     return config;
   },
   i18n: {
     locales: ['uz'],
     defaultLocale: 'uz',
   },
- 
+
   images: {
     remotePatterns: [
       {
