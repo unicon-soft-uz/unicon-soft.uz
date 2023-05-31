@@ -1,5 +1,6 @@
-import Header from '../sections/Header';
-export default function NotFound() {
+import Header from "../sections/Header";
+import React from "react";
+function NotFound() {
   return (
     <>
       <Header />
@@ -9,3 +10,5 @@ export default function NotFound() {
     </>
   );
 }
+
+export default NotFound;

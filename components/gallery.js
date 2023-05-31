@@ -1,6 +1,7 @@
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import alternative from '../public/alter.jpg';
+// @ts-ignore
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import React from "react";
 
 const url = `https://raw.githubusercontent.com/unicon-soft-uz/data/main/articles/news_data.json`;
 export default function Gallery() {

@@ -1,3 +1,48 @@
 {
-  "extends": "next/core-web-vitals"
+  "globals": {
+    "BMap": true,
+    "React": "writable"
+  },
+  "root": true,
+  "extends": [
+    "prettier",
+    "prettier/react",
+    "airbnb-typescript-prettier",
+    "plugin:import/typescript",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier", "react-hooks"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "es2020": true
+  },
+  /** rule options:
+   * 0 -> "off"
+   * 1 -> "warn"
+   * 2 -> "error"
+   **/
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "no-console": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "path": ["src"]
+      },
+      "typescript": {
+        "project": "."
+      }
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    }
+  },
+  "ignorePatterns": ["node_modules/", ".next/", "**/__generated__/", ".yarn/"]
 }
