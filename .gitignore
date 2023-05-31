@@ -19,6 +19,9 @@
 # misc
 .DS_Store
 *.pem
+yarn.lock
+package-lock.json
+next-env.d.ts
 
 # debug
 npm-debug.log*

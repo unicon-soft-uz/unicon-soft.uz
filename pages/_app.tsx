@@ -1,10 +1,10 @@
-import "tailwindcss/tailwind.css";
-import "../styles/globals.css";
-import { Layout } from "../sections/Layout";
+import 'tailwindcss/tailwind.css';
+import '../styles/globals.css';
+import { Layout } from '../sections/Layout';
 // @ts-ignore
-import type { AppProps } from "next/app";
+import type { AppProps } from 'next/app';
 // @ts-ignore
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from 'next-themes';
 
 export default function MyApp({
   Component,
@@ -13,7 +13,7 @@ export default function MyApp({
   return (
     <>
       <ThemeProvider enableSystem={true} attribute="class">
-        <Layout children={undefined}>
+        <Layout>
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>
