@@ -1,48 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.unicon-soft.uz/contact</loc>
-    <lastmod>Wed, 31 May 2023 08:02:14 GMT</lastmod>
-    <loc>https://www.unicon-soft.uz/404</loc>
-    <lastmod>Sat, 22 Apr 2023 16:15:42 GMT</lastmod>
+    <loc>https://www.unicon-soft.uz/404x</loc>
+    <lastmod>Wed, 31 May 2023 08:47:16 GMT</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.unicon-soft.uz/admin</loc>
-    <lastmod>Sat, 22 Apr 2023 16:15:42 GMT</lastmod>
+    <lastmod>Wed, 31 May 2023 08:47:16 GMT</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://www.unicon-soft.uz/contact</loc>
+    <lastmod>Wed, 31 May 2023 08:47:16 GMT</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.unicon-soft.uz/download</loc>
-    <lastmod>Wed, 31 May 2023 08:02:14 GMT</lastmod>
-
-    <lastmod>Sat, 22 Apr 2023 16:15:42 GMT</lastmod>
+    <lastmod>Wed, 31 May 2023 08:47:16 GMT</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.unicon-soft.uz/general</loc>
-    <lastmod>Wed, 31 May 2023 08:02:14 GMT</lastmod>
-
-    <lastmod>Sat, 22 Apr 2023 16:15:42 GMT</lastmod>
+    <lastmod>Wed, 31 May 2023 08:47:16 GMT</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.unicon-soft.uz/guide</loc>
-
-    <lastmod>Wed, 31 May 2023 08:02:14 GMT</lastmod>
-
-    <lastmod>Sat, 22 Apr 2023 16:15:42 GMT</lastmod>
+    <lastmod>Wed, 31 May 2023 08:47:16 GMT</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.unicon-soft.uz/info</loc>
-    <lastmod>Wed, 31 May 2023 08:02:14 GMT</lastmod>
-
-    <lastmod>Sat, 22 Apr 2023 16:15:42 GMT</lastmod>
+    <lastmod>Wed, 31 May 2023 08:47:16 GMT</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
