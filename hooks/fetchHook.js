@@ -5,7 +5,7 @@ import { db } from '../scripts/firebase';
 
 export default function useFetchData() {
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState('');
   const [todos, setTodos] = useState(null);
 
   const { currentUser } = useAuth();

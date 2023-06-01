@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import { Layout } from '../sections/Layout';
 import { ThemeProvider } from 'next-themes';
 import { ReactNode } from 'react';
+import AuthProvider from '../context/AuthContext';
 
 type App = {
   Component: string;
@@ -15,11 +16,14 @@ export default function MyApp({
 }: App): JSX.Element {
   return (
     <>
-      <ThemeProvider enableSystem={true} attribute="class">
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </ThemeProvider>
+      {' '}
+      <AuthProvider>
+        <ThemeProvider enableSystem={true} attribute="class">
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ThemeProvider>
+      </AuthProvider>
     </>
   );
 }

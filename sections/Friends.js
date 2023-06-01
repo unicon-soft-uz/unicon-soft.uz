@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Friends() {
   return (
     <>
-      <div className=" py-6 sm:pt-32">
+      <div className=" py-6 sm:pt-32 ">
         <div className="mx-auto max-w-7xl px-6 lg:pt-8">
           <h2 className="text-center text-lg font-semibold leading-8">
             Bizning hamkorlarimiz
@@ -19,7 +19,7 @@ export default function Friends() {
               >
                 <Image
                   title={items.name}
-                  className="col-span-2 max-h-24 w-full object-contain lg:col-span-1 bg-white full-filled hover:opacity-75"
+                  className="shadow-lg col-span-2 max-h-24 w-full object-contain lg:col-span-1 bg-white full-filled hover:opacity-75"
                   src={items.image}
                   alt={items.name}
                   width={158}

@@ -90,7 +90,7 @@ export default function AdminPanel() {
   }
 
   return (
-    <div className="w-full max-w-[65ch] text-xs sm:text-sm mx-auto flex flex-col flex-1 gap-3 sm:gap-5">
+    <div className="w-full max-w-[65ch] text-xs sm:text-sm mx-auto flex flex-col flex-1 gap-3 sm:gap-5 py-8">
       <div className="flex items-stretch">
         <input
           type="text"

@@ -14,6 +14,10 @@ export function useAuth() {
   return useContext(AuthContext);
 }
 
+export function logout() {
+  return signOut(auth);
+}
+
 export default function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -25,10 +29,6 @@ export default function AuthProvider({ children }) {
 
   function login(email, password) {
     return signInWithEmailAndPassword(auth, email, password);
-  }
-
-  function logout() {
-    return signOut(auth);
   }
 
   useEffect(() => {
