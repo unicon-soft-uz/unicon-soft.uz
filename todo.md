@@ -22,6 +22,6 @@
 
 ### [x] sitemap
 
-### [] fix reload Admin component
+### [x] fix reload Admin component
 
 ### [] add full CRUD
