@@ -1,24 +1,54 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { doc, setDoc, deleteField } from 'firebase/firestore';
-import { db } from '../scripts/firebase';
+import {
+  doc,
+  setDoc,
+  deleteField,
+  onSnapshot,
+  collection,
+  getDocs,
+} from 'firebase/firestore';
+import { db, database } from '../scripts/firebase';
 import useFetchData from '../hooks/fetchHook';
 import TodoCard from './editProfile';
+import { getStorage, getDownloadURL } from 'firebase/storage';
+import Image from 'next/image';
+import { ref, get } from 'firebase/database';
 
 export default function AdminPanel() {
   const { userInfo, currentUser } = useAuth();
   const [edit, setEdit] = useState(null);
   const [todo, setTodo] = useState('');
   const [edittedValue, setEdittedValue] = useState('');
-
+  const [foto, setFoto] = useState('');
   const { todos, setTodos, loading, error } = useFetchData();
 
   // useEffect(() => {
-  //     if (!userInfo || Object.keys(userInfo).length === 0) {
-  //         setAddTodo(true)
-  //     }
-  // }, [userInfo])
+  //   getDownloadURL(forestRef)
+  //     .then((f) => {
+  //       const photoURL = f;
+  //       // Metadata now contains the metadata for 'images/forest.jpg'
+  //       setFoto(photoURL + '.jpg');
+  //       console.log('fotoURL:', photoURL + '.jpg');
+  //     })
+  //     .catch((error) => {
+  //       console.log('getMetadata:', error);
+  //     });
+  // }, []);
+  ////////////////////
+  async function readData() {
+    const querySnapshot = await getDocs(collection(db, 'admin'));
+    // const data = await querySnapshot.docs;
+    console.log(querySnapshot);
+    // querySnapshot.forEach((doc) => {
+    //   console.log(`${doc.id} => ${doc.data()}`);
+    // });
+  }
+  readData();
+  // const dataa = doc(db, 'admin', 'region');
+  // console.log(dataa);
 
+  ///////////////////
   async function handleAddTodo() {
     if (!todo) {
       return;
@@ -113,22 +143,25 @@ export default function AdminPanel() {
       )}
       {!loading && (
         <>
-          {/* {Object.keys(todos).map((todo, i) => {
-            return (
-              <TodoCard
-                handleEditTodo={handleEditTodo}
-                key={i}
-                handleAddEdit={handleAddEdit}
-                edit={edit}
-                todoKey={todo}
-                edittedValue={edittedValue}
-                setEdittedValue={setEdittedValue}
-                handleDelete={handleDelete}
-              >
-                {todos[todo]}
-              </TodoCard>
-            );
-          })} */}
+          {/* <img src={foto} height={200} width={200} alt="fotor" /> */}
+          <>
+            {/* {Object.keys(todos).map((todo, i) => {
+      return (
+        <TodoCard
+          handleEditTodo={handleEditTodo}
+          key={i}
+          handleAddEdit={handleAddEdit}
+          edit={edit}
+          todoKey={todo}
+          edittedValue={edittedValue}
+          setEdittedValue={setEdittedValue}
+          handleDelete={handleDelete}
+        >
+          {todos[todo]}
+        </TodoCard>
+      );
+    })} */}
+          </>
         </>
       )}
       {/* {!addTodo && <button onClick={() => setAddTodo(true)} className='text-cyan-300 border border-solid border-cyan-300 py-2 text-center uppercase text-lg duration-300 hover:opacity-30'>ADD TODO</button>} */}
