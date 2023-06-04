@@ -7,6 +7,7 @@ import {
   onSnapshot,
   collection,
   getDocs,
+  getFirestore,
 } from 'firebase/firestore';
 import { db, database } from '../scripts/firebase';
 import useFetchData from '../hooks/fetchHook';
@@ -36,15 +37,24 @@ export default function AdminPanel() {
   //     });
   // }, []);
   ////////////////////
-  async function readData() {
-    const querySnapshot = await getDocs(collection(db, 'admin'));
-    // const data = await querySnapshot.docs;
-    console.log(querySnapshot);
-    // querySnapshot.forEach((doc) => {
-    //   console.log(`${doc.id} => ${doc.data()}`);
-    // });
+  // async function readData() {
+  //   const querySnapshot = await getDocs(collection(db, 'admin'));
+  //   const data = await querySnapshot.docs;
+  //   console.log('querySnap:', data);
+  //   // querySnapshot.forEach((doc) => {
+  //   //   console.log(`${doc.id} => ${doc.data()}`);
+  //   // });
+  // }
+  // readData();
+  async function getAllData() {
+    const database = getFirestore();
+    const colRef = collection(db, 'admin');
+    const docsSnap = await getDocs(colRef);
+    docsSnap.forEach((doc) => {
+      console.log(doc.data());
+    });
   }
-  readData();
+  getAllData();
   // const dataa = doc(db, 'admin', 'region');
   // console.log(dataa);
 
