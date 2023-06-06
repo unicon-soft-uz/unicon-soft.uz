@@ -37,26 +37,23 @@ export default function AdminPanel() {
   //     });
   // }, []);
   ////////////////////
-  // async function readData() {
-  //   const querySnapshot = await getDocs(collection(db, 'admin'));
-  //   const data = await querySnapshot.docs;
-  //   console.log('querySnap:', data);
-  //   // querySnapshot.forEach((doc) => {
-  //   //   console.log(`${doc.id} => ${doc.data()}`);
-  //   // });
-  // }
-  // readData();
-  async function getAllData() {
-    const database = getFirestore();
-    const colRef = collection(db, 'admin');
-    const docsSnap = await getDocs(colRef);
-    docsSnap.forEach((doc) => {
-      console.log(doc.data());
+  async function readData() {
+    const querySnapshot = await getDocs(collection(db, 'admin'));
+    const data = querySnapshot.docs;
+    querySnapshot.forEach((doc) => {
+      console.log(doc.id, doc.data());
     });
   }
-  getAllData();
-  // const dataa = doc(db, 'admin', 'region');
-  // console.log(dataa);
+  readData();
+  // async function getAllData() {
+  //   const colRef = collection(db, 'admin');
+  //   const docsSnap = await getDocs(colRef, 'region');
+  //   docsSnap.forEach((doc) => {
+  //     const people = doc.data().sirdaryo;
+  //     console.log(people);
+  //   });
+  // }
+  // getAllData();
 
   ///////////////////
   async function handleAddTodo() {
