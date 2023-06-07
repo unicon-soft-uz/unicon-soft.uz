@@ -47,8 +47,8 @@ export default function Header() {
     <header>
       <Popover className="relative bg-white z-50 w-auto m-0 p-0">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10 ">
-            <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="flex items-center justify-between border-b-2 border-gray-100 py-3 md:justify-start md:space-x-10 ">
+            <div className="flex justify-start lg:w-0 lg:flex-1 pt-3">
               <Logo />
             </div>
             <div className="-my-2 -mr-2 md:hidden">
